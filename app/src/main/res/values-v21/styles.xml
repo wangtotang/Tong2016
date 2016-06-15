@@ -1,9 +1,18 @@
-<resources>>
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button.Login" parent="Button">
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:background">@drawable/ripple_btn_login</item>
     </style>
+
+    <style name="Item">
+        <item name="android:background">@drawable/ripple_btn_item</item>
+    </style>
+
+    <style name="cardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
 </resources>

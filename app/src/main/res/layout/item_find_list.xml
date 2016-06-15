@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:clickable="true"
+    style="@style/Item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8">
+
+        <com.tong.baselibrary.common.widget.CircleImageView
+            android:id="@+id/civ_find_avatar"
+            app:border_color="@color/colorPrimary"
+            app:border_width="4px"
+            android:layout_width="@dimen/civ_find_size"
+            android:layout_height="@dimen/civ_find_size"
+            android:src="@drawable/ic_logo_index" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="某某某"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_material_grey_800"/>
+
+            <TextView
+                android:id="@+id/tv_item_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="这是一段简介"
+                android:textColor="@color/color_material_grey_600"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_item_find"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="关注"
+            android:textSize="18sp"
+            android:textColor="@color/color_material_ffffff"
+            android:background="@drawable/shape_btn_find"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_line" />
+
+</LinearLayout>

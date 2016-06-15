@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">同格</string>
+    <string name="fragment_subscribe_title">我的关注</string>
+    <string name="fragment_find_title">我的发现</string>
+    <string name="activity_info_title">详细资料</string>
+    <string name="activity_read_title">阅读历史</string>
+    <string name="activity_collect_title">查看收藏</string>
+</resources>

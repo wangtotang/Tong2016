@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="DisableBaselineAlignment">
+
+    <LinearLayout
+        android:id="@+id/search_plate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_search_view"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment,NestedWeights">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/ic_search_item_size"
+            android:layout_height="@dimen/ic_search_item_size"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_ic_search"
+            tools:ignore="ContentDescription" />
+
+        <view
+            android:id="@+id/search_src_text"
+            class="com.tong.tong2016.ui.widget.SimpleSearchView$SearchAutoComplete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ic_chevron_right_size"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete|textNoSuggestions"
+            android:minWidth="160dp"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"/>
+
+        <ImageView
+            android:id="@+id/search_close_btn"
+            android:layout_width="@dimen/ic_search_item_size"
+            android:layout_height="@dimen/ic_search_item_size"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_ic_clear"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/top_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_info_margin"
+        android:layout_marginRight="@dimen/item_info_margin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_item_comment_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016"
+                android:textSize="18sp"
+                android:textColor="@color/color_material_grey_700"/>
+
+            <TextView
+                android:id="@+id/tv_item_comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02 - 06"
+                android:textSize="18sp"
+                android:textColor="@color/color_material_grey_700"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_stepper_line"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/tv_item_commet_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="文章标题"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_material_grey_800"/>
+
+            <TextView
+                android:id="@+id/tv_item_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="故事，启迪你的人生；美文，陶冶你的情操，有声朗读，洗礼你的耳朵……"
+                android:textColor="@color/color_material_grey_600"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/buttom_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16"
+        android:visibility="gone"/>
+
+</LinearLayout>

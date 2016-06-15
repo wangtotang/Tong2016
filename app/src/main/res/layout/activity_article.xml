@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:fitsSystemWindows="true"
+        android:layout_height="@dimen/appbar_height"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/head_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shape_scrim_bottom"
+                android:gravity="bottom"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax">
+
+                <TextView
+                    android:id="@+id/tv_copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:textColor="@color/color_material_ffffff" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                app:contentScrim="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+                <ImageButton
+                    android:id="@+id/ib_back"
+                    android:layout_width="@dimen/ib_item_size"
+                    android:layout_height="@dimen/ib_item_size"
+                    android:src="@drawable/ic_back"
+                    android:scaleType="centerInside"
+                    android:background="?attr/actionBarItemBackground"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color_material_ffffff">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wb_read"
+                android:paddingBottom="@dimen/dp_16" />
+
+            <include
+                layout="@layout/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"/>
+
+            <LinearLayout
+                android:id="@+id/ll_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16">
+
+                <Button
+                    android:id="@+id/btn_view"
+                    style="@style/Button.Article"
+                    android:drawableLeft="@drawable/ic_view" />
+
+                <Button
+                    android:id="@+id/btn_like"
+                    style="@style/Button.Article"
+                    android:drawableLeft="@drawable/selector_ic_like" />
+
+                <Button
+                    android:id="@+id/btn_colllect"
+                    style="@style/Button.Article"
+                    android:drawableLeft="@drawable/selector_ic_collect" />
+
+                <Button
+                    android:id="@+id/btn_comment"
+                    style="@style/Button.Article"
+                    android:drawableLeft="@drawable/ic_comment" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_share"
+        app:backgroundTint="@color/colorAccent"/>
+
+</android.support.design.widget.CoordinatorLayout>

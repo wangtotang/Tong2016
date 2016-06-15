@@ -3,4 +3,25 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="logo_index_size">140dp</dimen>
+    <dimen name="btn_login_width">200dp</dimen>
+    <dimen name="btn_login_height">48dp</dimen>
+    <dimen name="appbar_height">240dp</dimen>
+    <dimen name="civ_find_size">72dp</dimen>
+    <dimen name="civ_info_size">88dp</dimen>
+    <dimen name="ic_chevron_right_size">36dp</dimen>
+    <dimen name="btn_item_height">48dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="item_info_margin">24dp</dimen>
+    <dimen name="item_civ_info_size">60dp</dimen>
+    <dimen name="item_info_height">56dp</dimen>
+    <dimen name="ic_search_item_size">24dp</dimen>
+    <dimen name="ib_item_size">48dp</dimen>
+
+    <dimen name="text_size_heading">18sp</dimen>
+    <dimen name="text_size_subheading">16sp</dimen>
+    <dimen name="height_line">1px</dimen>
+
+
 </resources>
